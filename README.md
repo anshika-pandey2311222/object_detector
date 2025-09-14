@@ -1,63 +1,46 @@
-🐶🐱 YOLOv8 Object Detector
+# 🐦 Object Detector (YOLOv8)
 
-A mini project that detects objects (like cats, dogs, birds, and more) in images, videos, and webcam streams using YOLOv8.
+A real-time object detection project using **YOLOv8**.  
+Detect objects from **images, videos, and webcam streams** with high accuracy.
 
-📌 Features
+---
 
-Detects objects in images
+## ⚡ Features
+- Detects multiple objects in images, videos, and live webcam feeds.  
+- Built with **Ultralytics YOLOv8**.  
+- Lightweight, fast, and easy to run.  
 
-Runs live detection on videos
+---
 
-Works in real-time with webcam feed
-
-Saves output images/videos with bounding boxes
-
-Shows FPS & object counts
-
-🛠️ Tech Stack
-
-Python 3.10+
-
-Ultralytics YOLOv8
-
-OpenCV for image/video handling
-
-PyTorch as the backend
-
-📂 Project Structure
-live_detector/
-│── detect.py            
-│── animal.jpg         
-│── requirements.txt    
-│── runs/               
-
-⚡ Installation
-
-Clone the repo:
-
-git clone https://github.com/anshika-pandey2311222/yolov8-detector.git
-cd yolov8-detector
+## 📂 Project Structure
+├── detect.py 
+├── animal.jpg # Sample image
+├── bus.jpg # Sample image
+├── traffic.mp4 # Sample video
+└── README.md 
 
 
-Create and activate a virtual environment:
+---
 
+## ⚙️ Installation
+```bash
+# Clone this repository
+git clone https://github.com/anshika-pandey2311222/object_detector.git
+cd object_detector
+
+# Create virtual environment
 python -m venv yolov8-env
-yolov8-env\Scripts\activate   
+yolov8-env\Scripts\activate   # On Windows
 
-
-Install dependencies:
-
-pip install -r requirements.txt
+# Install dependencies
+pip install ultralytics opencv-python
 
 🚀 Usage
-Detect objects in an image
+🖼️ Run detection on an Image:
 python detect.py animal.jpg
 
-Detect objects in a video
+🎥 Run detection on a Video:
 python detect.py traffic.mp4
 
-Run live webcam detection
-python detect.py webcam
-
-
-👉 Outputs are saved automatically in runs/detect/predict/
+📷 Run detection on Webcam:
+python detect.py 0
